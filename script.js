@@ -27,7 +27,7 @@ form.addEventListener('submit', (e)=>{
 			localStorage.setItem("username", user);
 			localStorage.setItem("password", pass);
 		}else{
-			localStorage.removeitem("username");
+			localStorage.removeItem("username");
 			localStorage.removeItem("password");
 		}
 		if(localStorage.getItem("username")){
@@ -38,7 +38,7 @@ form.addEventListener('submit', (e)=>{
 	}
 });
 existingBtn.addEventListener('click', ()=>{
-	const saveUser = localStorage.getitem("username");
+	const saveUser = localStorage.getItem("username");
 	if(saveUser){
 		alert("Logged in as " + saveUser);
 	}
